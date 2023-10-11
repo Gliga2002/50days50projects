@@ -59,7 +59,7 @@ function removePrevActiveCircle() {
 }
 
 function setProgressStep() {
-  const calcWidth = ((currActive - 0.8) / (numOfCircles - 0.8)) * 100;
+  const calcWidth = ((currActive - 1) / (numOfCircles - 1)) * 100;
   progressStepFull.style.width = calcWidth + '%';
 }
 

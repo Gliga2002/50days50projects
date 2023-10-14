@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Fill Animation</title>
+  </head>
+  <body>
+    <div class="fill-box" id="fill-box"></div>
+
+    Click below to animate:
+
+    <div id="digit"><div id="stripe">0123456789</div></div>
+    <script>
+      const fillBox = document.getElementById('fill-box');
+      // const stripe = document.getElementById('#stripe');
+
+      stripe.onclick = function() {
+      stripe.classList.add('animate');
+      };
+
+      fillBox.addEventListener('mouseover', () => {
+        fillBox.classList.add('clicked');
+      });
+    </script>
+  </body>
+</html>

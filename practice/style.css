@@ -1,0 +1,48 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.fill-box {
+  width: 300px;
+  height: 100px;
+  background-color: white;
+  cursor: pointer;
+  position: relative;
+}
+
+.fill-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: red;
+  transition: width 0.5s ease-in;
+}
+
+.fill-box.clicked::before {
+  width: 100%;
+}
+
+#digit {
+  width: 0.5em;
+  overflow: hidden;
+  font: 32px monospace;
+  cursor: pointer;
+}
+
+#stripe {
+  display: inline-block;
+}
+
+#stripe.animate {
+  transform: translate(-90%);
+  transition-property: transform;
+  transition-duration: 9s;
+  transition-timing-function: linear;
+}

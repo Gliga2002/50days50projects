@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&family=Barlow&family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: gainsboro;
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 100vh;
+}
+
+button {
+  padding: 10px 20px;
+  font-family: inherit;
+  border: 2px solid rgba(77, 77, 117, 0.5);
+  font-size: 18px;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.container__box {
+  transition: transform 0.3s ease-in;
+}
+
+.container__box:hover {
+  transform: scale(0.98);
+}
+
+.container__box__heading {
+  text-align: center;
+  opacity: 0.5;
+}
+
+.container__box__content {
+  background-color: #fff;
+  border: 2px solid rgb(192, 181, 181);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+}
+
+.hidden {
+  display: none !important;
+}
+
+

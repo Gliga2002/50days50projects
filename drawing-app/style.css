@@ -22,9 +22,9 @@ canvas {
 
 .toolbox {
   background-color: steelblue;
-  border: 1px solid stateblue;
+  border: 2px solid steelblue;
   display: flex;
-  width: 800px;
+  width: 404px;
   padding: 1rem;
 }
 

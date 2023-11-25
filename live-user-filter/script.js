@@ -18,7 +18,7 @@ async function getData() {
             }
   });
 
-  loading.classList.add('hide');
+  result.innerHTML = '';
 
 
   

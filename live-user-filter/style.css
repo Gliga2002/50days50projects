@@ -52,6 +52,23 @@ body {
   outline: none;
 }
 
+.loading {
+  background-color: #fff;
+  max-height: 400px;
+  padding: 30px;
+  /* height: 100px; */
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.loading.hide {
+  display: none;
+}
+
+
 .user-list {
   background-color: #fff;
   list-style-type: none;

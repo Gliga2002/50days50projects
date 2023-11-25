@@ -1,5 +1,6 @@
 const result = document.getElementById('result');
 const filter = document.getElementById('filter');
+const loading = document.querySelector('.loading');
 let userNames = [];
 
 filter.addEventListener('input', (e) => filterData(e.target.value));
@@ -16,6 +17,10 @@ async function getData() {
             name: `${user.name.first} ${user.name.last}`,
             }
   });
+
+  loading.classList.add('hide');
+
+
   
 
   results.forEach(user => {

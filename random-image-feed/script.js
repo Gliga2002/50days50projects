@@ -1,0 +1,18 @@
+const container = document.querySelector('.container');
+const UNSPLASHURL = 'https://source.unsplash.com/random/';
+const ROWS = 5;
+
+for(let i = 0; i < ROWS * 3; i++) {
+  const img = document.createElement('img')
+  img.src = `${UNSPLASHURL}${getRandomSize()}`
+  container.appendChild(img)
+}
+
+function getRandomSize() {
+  console.log(getRandomNr())
+  return `${getRandomNr()}x${getRandomNr()}`;
+}
+
+function getRandomNr() {
+  return Math.floor(Math.random() * 10) + 300;
+}
